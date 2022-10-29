@@ -1,0 +1,13 @@
+systemctl status  apache2.service    -check status of daemon
+systemctl start   apache2.service    -start the daemon
+systemctl stop    apache2.service    -stop the daemon
+systemctl reload  apache2.service    -reloading the service only configuration file gets reloaded, service keeps running but not all changes to settings are compatible with a reload sometimes you actually do need to restart the unit 
+systemctl restart apache2.service    -entire service gets restarts
+systemctl enable --now apache2.service    -automatically starts on boot
+systemctl disable apache2.service    -will not run on boot
+systemctl is-enabled apache2         -only want to see whether or not a unit is enabled or disabled 
+systemctl list-unit-files --type=service    -services info  
+
+
+journalctl -u apache2       -check a specific service logs      
+journalctl -u apache2 -f    -show updated info

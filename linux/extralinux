@@ -1,0 +1,6 @@
+# Directory Stacking and Jumping
+cd ~/Documents/android-studio/bin && pushd    -add this dir path to dir stack
+dirs -v                                       -see what saved
+cd ~2                                         -popdirectory
+popd                                          -go back to saved dir stack
+ 

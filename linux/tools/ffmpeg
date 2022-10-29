@@ -1,0 +1,8 @@
+ffmpeg -i vid.mp4 -c copy -an out.mp4              - remove audio
+ffmpeg -i vid.mp4 -vf scale=1280:720 out.mp4       - change resolution
+ffmpeg -i vid.mp4 -vcodec libx265 -crf 28 out.mp4  - reduce size
+ffmpeg -i vid.mp4 -vf hue=s=0 out.mp4              - remove colors
+ffmpeg -i vid.mp4 image%d.jpg                      - turn video into images
+ffmpeg -i vid.mp4 graphics_interchange_format.gif  - make gif
+ffmpeg -f image2 -i image%d.jpg video.mkv          - turn images to a video sequence
+ffmpeg -i vid.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 sound.mp3  - covert sound from video

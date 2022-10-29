@@ -1,0 +1,26 @@
+########## UFW ##########
+
+# /etc/default/ufw    - config
+sudo ufw status
+sudo ufw enable
+sudo ufw disable
+
+sudo ufw reset    #reset all setup rules, before the reset the rule ensure ufw disabled
+#setting up default policy
+sudo ufw default deny incoming
+sudo uft default allow outgoing
+
+#allow all connection
+sudo ufw allow  ssh, http, https, ftp
+#deny all connection
+sudo ufw deny  ssh, http, https, ftp
+
+sudo ufw allow from 10.0.0.1       #allow perticular connection from an ip
+sudo ufw allow from 10.0.0.1/24    #allow with subnet 
+sudo ufw allow from 10.0.0.1 to any port 22    #allow ip with port 
+sudo ufw deny from 10.0.0.1        #deny perticular connection from an ip 
+
+sudo ufw delete {nm}        #delete rule
+sudo ufw status numbered    #see rules
+
+

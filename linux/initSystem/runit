@@ -1,0 +1,13 @@
+sv up <services>
+sv down <services>
+sv restart <services>
+sv status <services>
+sv hup <service>    -send SIGHUP signal
+
+
+#Enabling Service
+ln -s /etc/runit/sv/<service> /run/runit/service
+unlink /run/runit/service/<service>
+
+Disabling Service
+touch /run/runit/service/<service>/down    -creating empty down file in service dir, for stop autostart
