@@ -1,5 +1,0 @@
-trans :hi "who are you?"      - who are you in hindi
-trans :es file://input.txt    - convert text file into spanish
-trans :fr https://sayanta01.github.io/    - translate site
-trans --shell en:hi    - interactive shell with lang
-trans -R  or -T        - language code-list

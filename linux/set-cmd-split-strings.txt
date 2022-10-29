@@ -1,7 +1,0 @@
-- ifconfig | grep "inet" | head -n 1 | awk '{print$2}'
-- ipadd="$(ifconfig | grep "inet" | head -n 1 | awk '{print$2}')"  -make variable of this command 
-- sayanta="bot"      -make variable
-- /etc/environment/  -set global environment variable here
-- echo $sayanta      -run variable 
-- unset ipadd        -remove environment variable
-
