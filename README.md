@@ -1,2 +1,2 @@
-## Get Good at GIT
-![k](lol.png)
+# Get Good at GIT
+![](lol.png)
